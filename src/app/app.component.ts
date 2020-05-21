@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'dev1';
+  UserName:string;
+  Password:string;
+  validateUser()
+  {
+    if (this.UserName=="Admim"&&this.Password=="Admin") 
+      {
+    alert("validate user");
+  }
+  else
+  {
+    alert("invalid user");
+  }
+  }
 }
